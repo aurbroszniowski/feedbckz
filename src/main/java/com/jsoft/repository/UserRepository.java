@@ -10,4 +10,5 @@ import com.jsoft.domain.entities.User;
  * Made by aurbrsz / 12/26/11 - 23:56
  */
 
+@Repository("userRepository")
 public interface UserRepository extends GraphRepository<User> { }

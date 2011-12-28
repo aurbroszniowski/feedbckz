@@ -7,8 +7,6 @@ import org.neo4j.kernel.EmbeddedGraphDatabase;
  */
 public class StartDatabase {
 
-
-
   public static void main(String[] args) {
     EmbeddedGraphDatabase graphDb;
     graphDb = new EmbeddedGraphDatabase("/work/feedbckz/db/unit-test");

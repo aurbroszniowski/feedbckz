@@ -24,7 +24,8 @@ public class UserController {
 
   @RequestMapping(method = RequestMethod.GET, value = "/user/{pseudo}", headers="Accept=application/xml, application/json")
   public @ResponseBody User getUserByPseudo(@PathVariable String pseudo) {
-    return userService.findUserByPseudo(pseudo);
+    Iterator<User> allUsers = userService.findAllUsers().iterator();
+    return allUsers.next();
   }
 
   @RequestMapping(method = RequestMethod.GET, value = "/welcome", headers = "Accept=application/xml, application/json")
