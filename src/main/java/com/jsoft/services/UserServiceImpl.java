@@ -14,8 +14,7 @@ import com.jsoft.repository.UserRepository;
 @Service("userService")
 public class UserServiceImpl implements UserService {
 
-  @Autowired
-  UserRepository userRepository;
+  @Autowired UserRepository userRepository;
 
   @Override
   @Transactional

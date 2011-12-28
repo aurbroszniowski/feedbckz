@@ -13,7 +13,6 @@ import com.jsoft.services.UserService;
 /**
  * Made by aurbrsz / 12/26/11 - 17:41
  */
-@Controller
 public class UserTest {
 
   @Autowired private UserService userService;

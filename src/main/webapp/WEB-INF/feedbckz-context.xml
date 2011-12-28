@@ -7,7 +7,20 @@
         http://www.springframework.org/schema/context 
         http://www.springframework.org/schema/context/spring-context-3.0.xsd">
 
-	<context:component-scan base-package="com.jsoft.controller" />
+  <!--<context:component-scan base-package="com.jsoft" />-->
+
+  <!-- <bean id="userService" class="com.jsoft.services.UserServiceImpl"/>
+   <bean id="userRepository" class="com.jsoft.repository.UserRepositoryImpl"/>
+   <bean id="userTest" class="com.jsoft.test.UserTest"/>
+
+   <context:spring-configured/>
+   <context:annotation-config/>
+  --> <!--
+
+   <neo4j:config storeDirectory="/work/feedbckz/neo4j-db"/>
+   <neo4j:repositories base-package="com.jsoft.repository"/>
+ -->
+	<context:component-scan base-package="com.jsoft" />
 
 	<bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
 		<property name="prefix">

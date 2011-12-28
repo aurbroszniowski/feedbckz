@@ -76,7 +76,11 @@ public class UserRepositoryImpl implements UserRepository {
 
   @Override
   public User findByPropertyValue(final String s, final Object o) {
-    return null;  //To change body of implemented methods use File | Settings | File Templates.
+    User u = new User();
+    u.setEmail("y test");
+    u.setPassword("y test");
+    u.setPseudo("y test");
+    return u;  //To change body of implemented methods use File | Settings | File Templates.
   }
 
   @Override
@@ -98,4 +102,6 @@ public class UserRepositoryImpl implements UserRepository {
   public <N> Iterable<User> findAllByTraversal(final N n, final TraversalDescription traversalDescription) {
     return null;  //To change body of implemented methods use File | Settings | File Templates.
   }
+  
+  
 }
