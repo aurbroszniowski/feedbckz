@@ -22,7 +22,7 @@ public class UserController {
   @Autowired
   private UserService userService;
 
-  @RequestMapping(method = RequestMethod.GET, value = "/user/{pseudo}", produces = "application/json")
+  @RequestMapping(method = RequestMethod.GET, value = "/user/{pseudo}", headers="Accept=application/xml, application/json")
   public @ResponseBody User getUserByPseudo(@PathVariable String pseudo) {
     return userService.findUserByPseudo(pseudo);
   }

@@ -8,6 +8,27 @@
   <artifactId>feedbckz</artifactId>
   <version>1.0</version>
 
+  <repositories>
+    <repository>
+      <snapshots>
+        <enabled>false</enabled>
+      </snapshots>
+      <id>spring-central</id>
+      <name>libs-release-remote</name>
+      <url>http://repo.springsource.org/libs-release-remote</url>
+    </repository>
+  </repositories>
+  <pluginRepositories>
+    <pluginRepository>
+      <snapshots>
+        <enabled>false</enabled>
+      </snapshots>
+      <id>spring-central</id>
+      <name>plugins-release</name>
+      <url>http://repo.springsource.org/plugins-release</url>
+    </pluginRepository>
+  </pluginRepositories>
+
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
   </properties>
@@ -133,6 +154,7 @@
       <plugin>
         <groupId>org.zeroturnaround</groupId>
         <artifactId>javarebel-maven-plugin</artifactId>
+        <version>1.0.5</version>
 
         <executions>
           <execution>

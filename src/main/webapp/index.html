@@ -3,8 +3,28 @@
 <html>
 <head>
     <title></title>
+    <script type="text/javascript" src="/js/jquery-1.7.1.min.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $.ajax({
+                type:"GET",
+                url:"/user/pseudo1",
+                dataType:"json",
+                success:function (data) {
+//                    $("#content").html("Hello World! ");
+                    $("#content2").html(data.pseudo);
+                }
+            });
+
+        });
+    </script>
 </head>
 <body>
-yoooo!!!
+yoooo!!!<br/>
+
+<div id="content"/><br/>
+<div id="content2"/><br/>
+<br/>Hej
 </body>
 </html>
