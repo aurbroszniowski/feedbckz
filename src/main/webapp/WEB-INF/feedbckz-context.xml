@@ -11,10 +11,10 @@
 	http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-2.5.xsd
 	">
 
-   <neo4j:config storeDirectory="/work/feedbckz/neo4j-db"/>
-   <neo4j:repositories base-package="com.jsoft.repository"/>
+  <neo4j:config storeDirectory="/work/feedbckz/neo4j-db"/>
+  <neo4j:repositories base-package="com.jsoft.repository"/>
 
- 	<context:component-scan base-package="com.jsoft" />
+  <context:component-scan base-package="com.jsoft" />
 
 	<bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
 		<property name="prefix">

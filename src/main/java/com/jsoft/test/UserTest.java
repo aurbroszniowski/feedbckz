@@ -61,8 +61,8 @@ public class UserTest {
 
   }
 //todo1: eviter dup
-  //close db cleanly
-  //faire marcher search
-  //neo4j : browser
-  //autowired userservice
+  // close db cleanly
+  // faire marcher search
+  // neo4j : browser
+
 }
