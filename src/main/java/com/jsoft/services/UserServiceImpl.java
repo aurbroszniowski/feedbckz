@@ -8,6 +8,9 @@ import org.springframework.transaction.annotation.Transactional;
 import com.jsoft.domain.entities.User;
 import com.jsoft.repository.UserRepository;
 
+import java.util.Map;
+import java.util.Set;
+
 /**
  * Made by aurbrsz / 12/26/11 - 22:50
  */
